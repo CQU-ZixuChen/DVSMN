@@ -9,11 +9,9 @@ from Dataset import MyGraphDataset
 parser = argparse.ArgumentParser()
 args = parser.parse_args(args=[])
 args.device = 'cuda'
-torch.manual_seed(args.seed)
+
 if torch.cuda.is_available():
     args.device = 'cuda:0'
-    torch.cuda.manual_seed(args.seed)
-    torch.cuda.manual_seed_all(args.seed)
 
 
 def get_parameter_number(model):
