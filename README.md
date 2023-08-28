@@ -1,12 +1,20 @@
 # DVSMN
 This is the source code of DVSMN. This method was proposed in the manscript "A Dual-View Style Mixing Network for Unsupervised Cross-Domain Fault Diagnosis With Imbalanced Data".
+
 The fundamental hyperparameters of DVSMN are set as follows:
+
   learning rate  ---  0.001
-  batch size     ---  64
+  
+  **batch size     ---  64**
+  
   training epoch ---  100
+
 Operational environment：
+
   Python --- 3.9
+  
   numpy  --- 1.20.0
+  
   torch  --- 1.11.0+cu115
   
 If this code is helpful to you, please cite this paper as follows, thank you!
