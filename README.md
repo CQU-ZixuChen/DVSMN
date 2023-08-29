@@ -11,7 +11,7 @@ The fundamental hyperparameters of DVSMN are set as follows:
   
   training epoch ---  100
 
-Operational environment：
+Dependencies：
 
   Python --- 3.9
   
