@@ -1,5 +1,5 @@
 # DVSMN
-This is the source code of DVSMN. This method was proposed in the paper **A Dual-View Style Mixing Network for Unsupervised Cross-Domain Fault Diagnosis With Imbalanced Data**.
+This is the source code of DVSMN. This method was proposed in the paper **A Dual-View Style Mixing Network for unsupervised cross-domain fault diagnosis with imbalanced data**.
 
 ![image](https://github.com/CQU-ZixuChen/DVSMN/blob/master/framework.png)
 
