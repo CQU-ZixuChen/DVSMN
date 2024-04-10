@@ -1,7 +1,7 @@
 import torch
 import scipy.io as scio
 import numpy as np
-from function import mmd_rbf, tst, cal_loss
+from function import tst, cal_loss
 from torch_geometric.loader import DataLoader
 from dual_net import DualNet
 import argparse
