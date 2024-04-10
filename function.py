@@ -66,4 +66,4 @@ def tst(model, loader):
         output1 = output1.cpu().numpy()
 
         data.y = data.y.cpu().numpy()
-    return _, accuracy, feature, feature1, output1, data.y
+    return accuracy, feature1, output1, data.y
