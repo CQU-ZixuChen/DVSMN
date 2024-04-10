@@ -64,7 +64,7 @@ for c1, c2 in zip(char1, char2):
                 patience += 1
         model = DualNet(args).to(args.device)
         model.load_state_dict(torch.load('latest.pth'))
-        test_loss1, test_acc1, feature, feature1, output1, label1 = tst(model, test_loader)
+        test_acc1, feature1, output1, label1 = tst(model, test_loader)
         print("Test accuarcy:{}".format(test_acc1))
 
 
