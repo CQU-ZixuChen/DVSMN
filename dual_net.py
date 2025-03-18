@@ -47,14 +47,14 @@ class DualNet(torch.nn.Module):
 
         x = F.relu(self.bn2(self.conv2(x, edge_index)))
         if flag == 0:
-            prob = torch.randn(len(x), 1).to(args.device)
+            prob = torch.rand(len(x), 1).to(args.device)
             miu = torch.mean(x, dim=1).unsqueeze(1).to(args.device)
             sigma = torch.std(x, dim=1).unsqueeze(1).to(args.device)
             s = sigma * (1 + prob)
             m = miu * (1 + prob)
             x = s * (x - miu) / sigma + m
         if flag == 1:
-            prob = torch.randn(len(x), 1).to(args.device)
+            prob = torch.rand(len(x), 1).to(args.device)
             miu_s = torch.mean(feature_s, dim=1).unsqueeze(1).to(args.device)
             sigma_s = torch.std(feature_s, dim=1).unsqueeze(1).to(args.device)
             miu_t = torch.mean(x, dim=1).unsqueeze(1).to(args.device)
